@@ -1,1 +1,51 @@
-/* placeholder — replaced in Task 2 */
+/* app/globals.css */
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F7F2EC;
+  --color-sage: #7A9E7E;
+  --color-terracotta: #C47B5A;
+  --color-ink: #2C2C2A;
+  --color-muted: #8A8A82;
+
+  --font-display: var(--font-cormorant), "Cormorant Garamond", serif;
+  --font-body: var(--font-dm-sans), "DM Sans", sans-serif;
+
+  --radius-card: 2px;
+  --shadow-card: 0 2px 16px 0 rgba(44, 44, 42, 0.08);
+  --shadow-card-hover: 0 8px 32px 0 rgba(44, 44, 42, 0.14);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-sage);
+  color: var(--color-cream);
+}
+
+/* Focus visible only on keyboard nav */
+:focus-visible {
+  outline: 2px solid var(--color-sage);
+  outline-offset: 3px;
+}
