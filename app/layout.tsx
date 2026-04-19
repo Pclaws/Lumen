@@ -1,6 +1,7 @@
 // app/layout.tsx
 import type { Metadata } from 'next'
 import { cormorant, dmSans } from '@/lib/fonts'
+import { ModalProvider } from '@/components/modal/ModalProvider'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -12,7 +13,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        <ModalProvider>
+          {children}
+        </ModalProvider>
+      </body>
     </html>
   )
 }

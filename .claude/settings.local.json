@@ -12,7 +12,21 @@
       "Bash(cat next.config.js)",
       "Bash(cat next.config.mjs)",
       "Bash(git rm *)",
-      "Bash(timeout 20 npm run dev)"
+      "Bash(timeout 20 npm run dev)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(timeout 30 bash -c 'until grep -q \"Local\" /tmp/dev-server.log 2>/dev/null; do sleep 1; done')",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(git init *)",
+      "Skill(firecrawl:firecrawl)",
+      "Read(//c/Users/Phinees/.claude/plugins/cache/claude-plugins-official/firecrawl/1.0.8/**)",
+      "Read(//c/Users/Phinees/.claude/plugins/cache/claude-plugins-official/firecrawl/**)",
+      "Bash(printenv)",
+      "WebFetch(domain:www.handy.com)",
+      "WebFetch(domain:www.maidsailors.com)",
+      "WebSearch"
     ]
   }
 }
