@@ -34,7 +34,7 @@ export default function Values() {
               &ldquo;We clean as if<br />
               it&rsquo;s our own home.&rdquo;
             </blockquote>
-            <p className="font-body text-sm text-muted mt-6 max-w-sm leading-relaxed">
+            <p className="font-body text-sm text-ink/70 mt-6 max-w-sm leading-relaxed">
               Lumen was founded on a simple belief: the standard for cleaning should be the same whether it&rsquo;s your home or ours.
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function Values() {
                 </div>
                 <div>
                   <h3 className="font-body text-sm font-semibold text-ink mb-1">{p.label}</h3>
-                  <p className="font-body text-sm text-muted leading-relaxed">{p.body}</p>
+                  <p className="font-body text-sm text-ink/70 leading-relaxed">{p.body}</p>
                 </div>
               </div>
             ))}

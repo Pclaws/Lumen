@@ -56,7 +56,7 @@ export default function Hero() {
           <br />
           <em className="italic">handled.</em>
         </h1>
-        <p className="font-body text-base md:text-lg text-muted max-w-md mx-auto mb-10 tracking-wide">
+        <p className="font-body text-base md:text-lg text-ink/70 max-w-md mx-auto mb-10 tracking-wide">
           Professional cleaning, thoughtfully done.
         </p>
         <button

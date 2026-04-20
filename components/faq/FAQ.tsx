@@ -82,7 +82,7 @@ export default function FAQ() {
                       transition={{ duration: 0.25, ease: 'easeInOut' }}
                       className="overflow-hidden"
                     >
-                      <p className="font-body text-sm text-muted leading-relaxed pb-5">
+                      <p className="font-body text-sm text-ink/70 leading-relaxed pb-5">
                         {faq.a}
                       </p>
                     </motion.dd>

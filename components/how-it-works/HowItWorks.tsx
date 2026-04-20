@@ -44,7 +44,7 @@ export default function HowItWorks() {
               {/* Content */}
               <div className="relative pt-8 md:pt-12">
                 <h3 className="font-display text-2xl text-ink mb-3">{step.title}</h3>
-                <p className="font-body text-sm text-muted leading-relaxed max-w-xs">
+                <p className="font-body text-sm text-ink/70 leading-relaxed max-w-xs">
                   {step.body}
                 </p>
               </div>

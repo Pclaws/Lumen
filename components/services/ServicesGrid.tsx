@@ -79,7 +79,7 @@ export default function ServicesGrid() {
           >
             <div className="mb-6">{service.icon}</div>
             <h3 className="font-display text-2xl text-ink mb-2">{service.title}</h3>
-            <p className="font-body text-sm text-muted leading-relaxed mb-6">
+            <p className="font-body text-sm text-ink/70 leading-relaxed mb-6">
               {service.description}
             </p>
             <ServiceCTA service={service.title} />
