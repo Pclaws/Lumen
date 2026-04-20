@@ -2,6 +2,7 @@
 import type { Metadata } from 'next'
 import { cormorant, dmSans } from '@/lib/fonts'
 import { ModalProvider } from '@/components/modal/ModalProvider'
+import QuoteModal from '@/components/modal/QuoteModal'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <ModalProvider>
           {children}
+          <QuoteModal />
         </ModalProvider>
       </body>
     </html>
