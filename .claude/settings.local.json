@@ -26,7 +26,8 @@
       "Bash(printenv)",
       "WebFetch(domain:www.handy.com)",
       "WebFetch(domain:www.maidsailors.com)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(npm test *)"
     ]
   }
 }
