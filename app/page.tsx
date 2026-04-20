@@ -3,6 +3,7 @@ import Hero from '@/components/hero/Hero'
 import TrustStrip from '@/components/trust/TrustStrip'
 import ServicesGrid from '@/components/services/ServicesGrid'
 import HowItWorks from '@/components/how-it-works/HowItWorks'
+import QuoteCalculator from '@/components/calculator/QuoteCalculator'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <TrustStrip />
       <ServicesGrid />
       <HowItWorks />
+      <QuoteCalculator />
       <div className="h-screen bg-cream" />
     </main>
   )
