@@ -3,6 +3,7 @@
 import { useScroll, useMotionValueEvent } from 'motion/react'
 import { useState } from 'react'
 import { useModal } from '@/components/modal/ModalProvider'
+import Image from 'next/image'
 
 export default function Nav() {
   const { scrollY } = useScroll()
@@ -27,9 +28,18 @@ export default function Nav() {
         {/* Logo */}
         <a
           href="/"
-          className="font-display italic text-xl text-ink tracking-wide hover:text-sage transition-colors"
+          className={`flex items-center gap-2 font-display italic text-xl tracking-wide transition-colors ${solid ? 'text-ink hover:text-sage' : 'text-cream hover:text-sage/80'}`}
           aria-label="Lumen Clean Co. — home"
         >
+          <div className="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+            <Image 
+              src="/logo.png" 
+              alt="Lumen Logo" 
+              fill 
+              sizes="32px"
+              className={`object-cover transition-all duration-300 ${solid ? 'mix-blend-multiply' : 'invert mix-blend-screen'}`}
+            />
+          </div>
           Lumen
         </a>
 
@@ -43,7 +53,7 @@ export default function Nav() {
             <li key={href}>
               <a
                 href={href}
-                className="font-body text-sm text-ink/70 hover:text-ink transition-colors tracking-wide"
+                className={`font-body text-sm transition-colors tracking-wide ${solid ? 'text-ink/70 hover:text-ink' : 'text-cream/80 hover:text-cream'}`}
               >
                 {label}
               </a>
@@ -54,7 +64,7 @@ export default function Nav() {
         {/* CTA */}
         <button
           onClick={() => openModal()}
-          className="min-h-[44px] min-w-[44px] px-5 py-2 bg-terracotta text-cream font-body text-sm font-medium tracking-wide rounded-sm hover:bg-terracotta/90 transition-colors focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2"
+          className={`min-h-[44px] min-w-[44px] px-5 py-2 font-body text-sm font-medium tracking-wide rounded-sm transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 ${solid ? 'bg-terracotta text-cream hover:bg-terracotta/90 focus-visible:ring-terracotta' : 'bg-cream text-ink hover:bg-cream/90 focus-visible:ring-cream'}`}
         >
           Get a quote
         </button>

@@ -2,9 +2,9 @@ import ServiceCTA from './ServiceCTA'
 
 const services = [
   {
-    id: 'deep',
-    title: 'Deep Clean',
-    description: 'A thorough clean of every surface, corner, and crevice — perfect for first-time clients.',
+    id: 'residential',
+    title: 'Houses & Residential',
+    description: 'Comprehensive cleaning for houses of all sizes. Consistent maintenance cleaning on your schedule — weekly or bi-weekly.',
     icon: (
       <svg viewBox="0 0 48 48" className="w-10 h-10 stroke-sage fill-none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M10 38 Q18 20 28 14" />
@@ -16,9 +16,9 @@ const services = [
     ),
   },
   {
-    id: 'regular',
-    title: 'Regular Clean',
-    description: 'Consistent maintenance cleaning on your schedule — weekly or bi-weekly.',
+    id: 'buildings',
+    title: 'Inside Buildings',
+    description: 'Specialized cleaning for offices, multi-tenant buildings, and indoor corporate spaces kept pristine.',
     icon: (
       <svg viewBox="0 0 48 48" className="w-10 h-10 stroke-sage fill-none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="10" y="12" width="28" height="26" rx="2" />
@@ -30,9 +30,9 @@ const services = [
     ),
   },
   {
-    id: 'move',
-    title: 'Move In / Out',
-    description: 'Leave your old place spotless or welcome yourself into a fresh, clean home.',
+    id: 'hotels',
+    title: 'Hotels & Hospitality',
+    description: 'Impeccable turnover and deep cleaning for hotels, ensuring a five-star experience for every guest.',
     icon: (
       <svg viewBox="0 0 48 48" className="w-10 h-10 stroke-sage fill-none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="12" y="18" width="24" height="18" rx="1" />
@@ -43,9 +43,9 @@ const services = [
     ),
   },
   {
-    id: 'commercial',
-    title: 'Commercial',
-    description: 'Office and retail spaces kept pristine — flexible scheduling around your business hours.',
+    id: 'deep',
+    title: 'Deep Clean',
+    description: 'A thorough clean of every surface, corner, and crevice — perfect for initial or seasonal transformations.',
     icon: (
       <svg viewBox="0 0 48 48" className="w-10 h-10 stroke-sage fill-none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="8" y="16" width="32" height="24" rx="1" />

@@ -42,3 +42,8 @@ next-env.d.ts
 
 # prompt files
 prompt.md
+dev-output.txt
+
+# editor/tool config
+.claude/
+.firecrawl/
